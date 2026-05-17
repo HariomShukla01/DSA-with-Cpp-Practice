@@ -1,0 +1,192 @@
+code-1
+
+#include <iostream>
+using namespace std;
+
+// This program demonstrates how to print the address of a variable in C++.
+
+int main(){
+    int a=20;
+    cout<<"Address of a is:"<<&a<<endl;
+    return 0;
+}
+
+code-2
+
+#include <iostream>
+using namespace std;
+
+// This program demonstrates how to print the address of a variable in C++.
+
+int main(){
+    int a=10;
+    int *ptr = &a;
+    cout<<ptr;
+    return 0;
+
+}
+
+code-3
+
+ #include <iostream>
+using namespace std;
+
+// This program demonstrates how to print the address of a variable in C++.
+
+int main(){
+    int a=10;
+    int *ptr = &a;
+    cout<<*ptr;
+    return 0;
+
+}
+
+code-4
+
+ #include <iostream>
+using namespace std;
+
+// This program demonstrates how to print the address of a variable in C++.
+
+int main(){
+    int x=20;
+    int *ptr = &x;
+ cout<<"Value of x is :" <<x<<endl;
+ cout<<"Address of x is:" <<&x<<endl;
+ cout<<"Address of x is:"<<ptr<<endl;
+ cout<<"Vlue avalable is the address is:"<<*ptr<<endl;
+
+
+
+
+    return 0;
+}
+
+code-5
+
+  #include <iostream>
+using namespace std;
+
+// This program demonstrates how to print the address of a variable in C++.
+
+int main(){
+
+    int a=1000;
+    int *ptr=&a;
+     *ptr=500;
+     cout<<a;
+
+    return 0;
+}
+
+code-6
+
+  #include <iostream>
+using namespace std;
+
+// recursive function to print numbers from 1 to n
+
+void print(int n){
+if (n==0)
+
+return;
+
+print(n-1);  
+cout<<n<<" ";            
+
+}
+
+
+int main(){
+
+print(5);
+}
+
+code-7
+
+ #include <iostream>
+using namespace std;
+
+//
+
+int factorial(int n) {
+    if(n==0)
+    return 1;
+    return n*factorial(n-1);
+}
+int main(){
+
+    cout<<factorial(5);
+
+    return 0;
+
+
+}
+
+
+    
+
+
+code-8
+
+#include <iostream>
+using namespace std;
+
+//recursive function to find the nth Fibonacci number
+
+int fib(int n ){
+    if(n==0)
+    return 0;
+
+    if(n==1)
+    return 1;
+
+    return fib(n-1)+(n-2);
+}
+
+
+
+int main(){
+cout<< fib(6);
+
+return 0;
+}
+
+code-9
+
+ #include <iostream>
+using namespace std;
+
+// recursive function to find the sum of first n natural numbers
+
+int  sum(int n){
+if(n==0)
+return 0;
+return n+ sum(n-1);
+}
+int main(){
+ cout<< sum(5);
+    return 0;
+}
+
+code-10
+
+  #include <iostream>
+using namespace std;
+
+//recursive reversal of numbers from n to 1
+
+void reverse(int n){
+    if (n==0)
+    return;
+
+    cout<<n<<" ";
+    reverse(n-1);
+}
+
+
+int main(){
+    reverse(5);
+
+    return 0;
+}
